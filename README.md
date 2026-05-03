@@ -1,82 +1,113 @@
-Spotify Scraping Tool
+# 🎧 Spotify Scraping Tool
 
-A Python-based tool for extracting and analyzing music data from Spotify.
+A Python-based CLI tool for scraping (extracting) music data from Spotify and analyzing it.
 
-This project allows you to scrape (extract) tracks, playlists, and audio features using Spotify’s public endpoints and process them into structured datasets.
+This tool collects tracks, playlists, and audio features and transforms them into structured datasets for analysis.
 
-🚀 Features
-🔎 Scrape tracks from search queries
-🎵 Extract playlist data from URLs
-📊 Collect audio features (energy, tempo, danceability)
-🔥 Detect viral tracks
-💾 Export results to CSV
-🖥️ Interactive CLI tool
-⚙️ How It Works
+---
 
-The tool:
+## 🚀 Features
 
-Authenticates with Spotify
-Extracts data from:
-Search results
-Playlists
-Audio features endpoints
-Merges and analyzes the data
-Saves results locally
+* 🔎 Scrape tracks from search queries
+* 🎵 Extract playlist data from URLs
+* 📊 Fetch audio features (danceability, energy, tempo, etc.)
+* 🔥 Detect viral tracks
+* 💾 Export results to CSV
+* 🖥️ Interactive terminal interface
 
-📦 Installation
+---
+
+## 📦 Installation
+
+```bash
 git clone https://github.com/moswebgr/Spotify-Scraping.git
 cd Spotify-Scraping
 pip install requests pandas
-🔑 Setup
+```
 
-Create:
+---
 
-config/credentials.txt
+## 🔑 Setup
+
+Create the following config files:
+
+### config/credentials.txt
+
+```
 CLIENT_ID=your_client_id
 CLIENT_SECRET=your_client_secret
+```
 
-config/queries.txt
-Eminem
+### config/queries.txt
+
+```
+drake
 travis scott
+Eminem
+```
 
-config/playlists.txt
+### config/playlists.txt
+
+```
 https://open.spotify.com/playlist/XXXXXXXX
+```
 
-▶️ Usage
+---
+
+## ▶️ Usage
+
+```bash
 python main.py
+```
 
-🖥️ Menu
+---
+
+## 🖥️ Menu
+
+```
 1. Search + Analyze Tracks
 2. Find Viral Tracks
 3. Analyze Playlists
 4. Exit
-   
-📊 Output
-File	Description
-output/tracks.csv	Scraped tracks + features
-output/viral.csv	Viral track detection
-output/playlists.csv	Playlist data
+```
 
-📊 Data Collected
-Track name
-Artist
-Popularity
-Danceability
-Energy
-Tempo
-Valence
+---
 
-⚠️ Disclaimer
-This project is for educational purposes
-Uses Spotify public API endpoints
-May be subject to Spotify rate limits
-Not affiliated with Spotify
+## 📊 Output
 
+* output/tracks.csv → scraped tracks + features
+* output/viral.csv → viral tracks
+* output/playlists.csv → playlist data
 
+---
 
-📜 License
+## 📊 Data Collected
+
+* Track name
+* Artist
+* Popularity
+* Danceability
+* Energy
+* Tempo
+* Valence
+
+---
+
+## ⚠️ Disclaimer
+
+* For educational purposes only
+* Uses Spotify public endpoints
+* Subject to rate limits
+* Not affiliated with Spotify
+
+---
+
+## 📜 License
 
 MIT License
 
-👨‍💻 Author
-vasilis moskofidis
+---
+
+## 👨‍💻 Author
+
+Vasilis Moskofidis

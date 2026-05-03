@@ -22,7 +22,7 @@ This tool collects tracks, playlists, and audio features and transforms them int
 ```bash
 git clone https://github.com/moswebgr/Spotify-Scraping.git
 cd Spotify-Scraping
-pip install requests pandas
+pip install -r requirements.txt or pip3 install -r requirements.txt
 ```
 
 ---
